@@ -23,7 +23,7 @@ fun Pseudo1(ab: Int): Pseudo1 {
 // 1. We do not have access to private members of 'Pseudo1' ('c')
 // 2. Original (primary) constructor is still callable from the outside
 // 3. Not very maintainable, what if you rename the class? You always have to remember to refactor this function as well
-// 3. Functions in Kotlin should follow camelCase naming, although this case is an exception
+// 4. Functions in Kotlin should follow camelCase naming, although this case is an exception
 
 // First improvement: Make primary constructor internal
 class Pseudo2 internal constructor(val a: Int, val b: Int) {
